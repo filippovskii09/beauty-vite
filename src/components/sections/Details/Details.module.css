@@ -1,0 +1,50 @@
+.container {
+	display: flex;
+	padding-top: 50px;
+	gap: 30px;
+	padding-bottom: 100px;
+}
+
+.image {
+	width: 455px;
+	height: 455px;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+.name {
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 130%;
+}
+.prop {
+	padding-top: 24px;
+	padding-bottom: 20px;
+}
+.productInfo {
+	display: flex;
+	gap: 26px;
+	padding-bottom: 32px;
+}
+.price {
+	font-size: 32px;
+	font-weight: 500;
+	padding-bottom: 22px;
+	padding-top: 14px;
+	padding-bottom: 30px;
+}
+.button {
+	padding: 10px 106px;
+	border-radius: 80px;
+	background: #323232;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+.stockTrue {
+	color: #0B9221;
+}
+.stockFalse {
+	color: rgb(255, 0, 0);
+}

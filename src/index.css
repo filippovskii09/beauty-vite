@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap');
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, html, body  {
+	font-family: 'Manrope', sans-serif;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+	max-width: 1110px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.swiper {
+	width: 830px;
+	@media (max-width: 1040px){
+		width: 610px;
+	}
+	@media (max-width: 640px){
+		width: 500px;
+	}
+	@media (max-width: 510px){
+		width: 340px;
+	}
+	@media (max-width: 375px){
+		width: 300px;
+	}
+}
+
+.swiper-wrapper {
+	/* transform: translate3d(-276px, 0px, 0px) !important; */
+	display: flex !important;
+	gap: 55px !important;
+	@media (max-width: 1040px){
+		gap: 35px !important;
+	}
+}
+
+.swiper-slide {
+	width: 240px !important;
+	@media (max-width: 1040px){
+		width: 166px !important;
+	}
+}
+.swiper-button-prev::after {
+	content: none !important;
+}
+.swiper-button-next::after {
+	content: none !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	right: 0 !important;
+	top: 0 !important;
+	position: static !important;
+	margin: 0 !important;
+	width: unset !important;
+	height: unset !important;
+	color: #000 !important;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+	right: 0 !important;
+	left: unset !important;
+}
+
+.modal-open {
+	overflow: hidden;
+}

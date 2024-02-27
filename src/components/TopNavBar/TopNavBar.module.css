@@ -1,0 +1,31 @@
+a {
+	text-decoration: none;
+	color: var(--bw-black, #323232);
+}
+.headerTop {
+	padding: 14px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	@media (max-width: 768px){
+		display: none;
+	}
+}
+.headerTopWrapper {
+	display: flex;
+	align-items: center;
+	gap: 42px;
+}
+.headerTopList {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	@media (max-width: 1024px){
+		gap: 18px;
+	}
+}
+.headerItem {
+	cursor:pointer;
+	color: var(--bw-black, #323232);
+	line-height: 22px; /* 137.5% */
+}

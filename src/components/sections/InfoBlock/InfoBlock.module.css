@@ -1,0 +1,71 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 1040px){
+		align-items: center;
+	}
+	@media (max-width: 860px){
+		flex-direction: column;
+		row-gap: 26px;
+	}
+}
+
+.propose {
+	padding-top: 45px;
+	padding-bottom: 50px;
+	@media (max-width: 1040px){
+		padding-top: 30px;
+		padding-bottom: 35px;
+	}
+}
+.info {
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 14px;
+	@media (max-width: 1040px){
+		padding: 0;
+	}
+	@media (max-width: 860px){
+		text-align: center;
+	}
+}
+.title {
+	font-weight: 500;
+	font-size: 32px;
+	letter-spacing: 0.02em;
+	color: #323232;
+	@media (max-width: 1040px){
+		font-size: 24px;
+	}
+}
+.text {
+	font-size: 18px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	color: #323232;
+	max-width: 212px;
+	@media (max-width: 1040px){
+		font-size: 14px;
+	}
+	@media (max-width: 860px){
+		max-width: unset;
+	}
+}
+
+.swiper {
+	position: relative;
+}
+.swiperButtons {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #323232;
+	justify-content: flex-end;
+	margin-bottom: 25px;
+	@media (max-width: 860px){
+		justify-content: center;
+		margin: 20px 0px;
+	}
+}

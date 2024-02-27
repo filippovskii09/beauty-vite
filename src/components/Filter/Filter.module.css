@@ -1,0 +1,32 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 9px;
+}
+.title {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 25px;
+}
+.item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.count {
+	color: rgb(168, 168, 168);
+}
+.button {
+	border-radius: 0;
+	border: 1px solid #000;
+	color: #000;
+	padding: 10px;
+	font-weight: 500;
+	background-color: transparent;
+	cursor: pointer;
+}

@@ -1,0 +1,80 @@
+.item {
+	display: flex;
+	gap: 31px;
+	border-bottom: 1px solid #D4D4D4;
+	padding-bottom: 20px;
+}
+.item:last-child {
+	border-bottom: none;
+}
+.itemImage {
+	overflow: hidden;
+	& img {
+		height: 160px;
+		width: 160px;
+	}
+}
+
+.itemContent {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2px;
+	max-width: 512px;
+}
+.itemTitle {
+	color: var(--bw-black, #323232);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 120%; /* 21.6px */
+	letter-spacing: 0.36px;
+}
+.itemText {
+	color: var(--bw-dark-gray, var(--, #575757));
+	letter-spacing: 0.32px;
+	padding-bottom: 10px;
+}
+
+.itemActions {
+	display: flex;
+	align-items: center;
+}
+
+.actionsWrapper {
+	flex: 1 1 auto;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.counter {
+	display: flex;
+	align-items: center;
+	border-radius: 26px;
+	border: 1px solid var(--bw-semi-light-gray, #D4D4D4);
+	width: 160px;
+	color: var(--bw-black, #323232);
+	font-size: 22px;
+	letter-spacing: 0.44px;
+	height: 42px;
+	justify-content: space-around;
+}
+.counterButton {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+.price {
+	color: var(--bw-black, #323232);
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 120%; /* 30px */
+	letter-spacing: 0.5px;
+}
+.itemDelete {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	padding: 3px;
+}

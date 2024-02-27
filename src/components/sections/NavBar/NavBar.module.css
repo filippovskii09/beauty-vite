@@ -1,0 +1,33 @@
+.navigation {
+	@media (max-width: 768px){
+		display: none;
+	}
+}
+.nav {
+	padding: 16px 0px;
+	font-family: 'Manrope', sans-serif;
+}
+.list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	row-gap: 20px;
+}
+
+.item {
+	color: var(--bw-black, #323232);
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 22px; /* 129.412% */
+	letter-spacing: 0.34px;
+	a {
+		color: var(--bw-black, #323232);
+		text-decoration: none;
+	}
+
+}
+
+.active {
+	text-decoration: underline;
+}

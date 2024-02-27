@@ -1,0 +1,20 @@
+.like {
+	fill: transparent;
+	cursor: pointer;
+	position: absolute;
+	right: 12px;
+	top: 12px;
+}
+.like path {
+	stroke: black;
+}
+.checked {
+	fill: red;
+	cursor: pointer;
+	position: absolute;
+	right: 12px;
+	top: 12px;
+}
+.checked path {
+	stroke: red;
+}

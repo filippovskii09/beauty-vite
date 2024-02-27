@@ -1,0 +1,68 @@
+.css-w8dmq8 {
+	font-family: 'Manrope', sans-serif !important;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+	font-size: 21px !important;
+	font-weight: 500 !important;
+	letter-spacing: 0.42px !important;
+	color: #A8A8A8 !important;
+	padding: 0 !important; 
+	@media (max-width: 1050px){
+		font-size: 18px !important;
+	}
+	@media (max-width: 585px){
+		font-size: 16px !important;
+	}
+	@media (max-width: 490px){
+		font-size: 14px !important;
+	}
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+	color: var(--bw-black, #323232) !important;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+	background: #F9D8D3 !important;
+	height: 3px !important;
+	bottom: 10px !important;
+}
+
+.css-1gsv261 {
+	border: none !important;
+}
+
+.css-heg063-MuiTabs-flexContainer {
+	gap: 60px !important;
+	@media (max-width: 1050px){
+		justify-content: center !important;
+	}
+	@media (max-width: 585px){
+		gap: 25px !important;
+	}
+	@media (max-width: 490px){
+		gap: 15px !important;
+	}
+}
+.account .css-heg063-MuiTabs-flexContainer {
+	justify-content: center !important;
+}
+
+.css-13xfq8m-MuiTabPanel-root {
+	padding: 0 !important;
+	width: 774px !important;
+	margin: 0 auto !important;
+	@media (max-width: 1140px){
+		width: 675px !important;
+	}
+	@media (max-width: 680px){
+		width: 480px !important;
+	}
+	@media (max-width: 525px){
+		width: 320px !important;
+	}
+	@media (max-width: 362px){
+		width: 300px !important;
+	}
+}

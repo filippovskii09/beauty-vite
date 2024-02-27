@@ -1,0 +1,1 @@
+export const url = "https://e-commerce-beauty-backend.onrender.com/api"

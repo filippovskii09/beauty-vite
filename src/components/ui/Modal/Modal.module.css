@@ -1,0 +1,89 @@
+.modal {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(26, 26, 26, 0.423);
+	font-family: 'Manrope', sans-serif;
+	z-index: 100;
+}
+
+.show {
+	opacity: 1;
+	transform: scale(1);
+}
+.hide {
+	opacity: 0;
+	transform: scale(0);
+}
+
+.modalContent {
+	background-color: #fff;
+	color: #000;
+	transition: all 0.3s ease 0s;
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px;
+	padding: 60px 30px;
+}
+.item {
+	display: flex;
+	gap: 6px;
+}
+.title {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 120%;
+	letter-spacing: -2%;
+	text-align: center;
+}
+.image {
+	width: 255px;
+	height: 255px;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+}
+.name {
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 34px;
+	letter-spacing: 2%;
+	padding-bottom: 75px;
+	max-width: 496px;
+}
+.actions {
+	padding-top: 17px;
+	display: flex;
+	align-items: center;
+	gap: 35px;
+}
+.price {
+	font-size: 25px;
+	font-weight: 600;
+}
+.next {
+	padding: 6px 34px;
+	background-color: transparent;
+	line-height: 22px;
+	border-radius: 26px;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+.close {
+	padding: 10px;
+	border: none;
+	background: transparent;
+	font-size: 18px;
+	cursor: pointer;
+}

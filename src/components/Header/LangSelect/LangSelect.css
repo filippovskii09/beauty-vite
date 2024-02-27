@@ -1,0 +1,10 @@
+.css-ece9u5 {
+	min-width: 60px !important;
+}
+.css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
+	content: '' !important;
+	display: none !important;
+}
+.css-19ygod6-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input {
+	padding: 0 !important;
+}

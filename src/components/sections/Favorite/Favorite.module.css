@@ -1,0 +1,11 @@
+.error {
+	padding-top: 100px;
+   text-align: center;
+   font-size: 32px;
+}
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 60px 0px;
+}

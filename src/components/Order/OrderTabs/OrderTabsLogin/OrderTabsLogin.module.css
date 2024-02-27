@@ -1,0 +1,42 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+.row {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+	row-gap: 6px;
+}
+.label {
+	color: var(--bw-middle-gray, #A8A8A8);
+	font-size: 12px;
+	font-weight: 600;
+	padding-left: 4px;
+}
+.input {
+	width: 100%;
+	height: 45px;
+	padding-left: 18px;
+	border-radius: 26px;
+	border: 1px solid var(--bw-middle-gray, #A8A8A8);
+	cursor: pointer;
+	width: 350px;
+}
+.input::placeholder {
+	color: var(--bw-semi-light-gray, #D4D4D4);
+	font-size: 14px;
+	transition: all 0.3s ease 0s;
+}
+
+.input:hover::placeholder {
+	color:#000;
+}
+.input:focus::placeholder {
+	opacity: 0;
+}

@@ -1,0 +1,162 @@
+header {
+	background: linear-gradient(90deg, rgba(255, 200, 171, 0.91) 0%, #FFE5EE 66.98%);
+	box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.10);
+	font-family: 'Manrope', sans-serif;
+}
+.headerContainer {
+	max-width: 1110px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
+
+.headerItem {
+	cursor:pointer;
+	color: var(--bw-black, #323232);
+	line-height: 22px; /* 137.5% */
+}
+
+.headerLine {
+	width: 100%;
+	height: 1px;
+	background: #575757;
+	@media (max-width: 768px){
+		display: none;
+	}
+}
+
+.headerBottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 0px;
+	@media (max-width: 768px){
+		padding: 10px 24px;
+	}
+}
+.headerBottomList {
+	display: flex;
+	align-items: center;
+	gap: 22px;
+}
+.headerBottomItem {
+	transition: all 0.3s ease 0s;
+}
+.headerBottomItem:hover {
+	transform: scale(1.15);
+}
+
+.headerItem a {
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+ }
+ 
+ .headerItem a::before,
+ .headerItem a::after {
+  content: '';
+	position: absolute;
+	width: 100%;
+	left: 0;
+ }
+ .headerItem a::before {
+	background-color: #323232;
+	height: 2px;
+	bottom: 0;
+	transform-origin: 100% 50%;
+	transform: scaleX(0);
+	transition: transform .6s cubic-bezier(0.76, 0, 0.24, 1);
+ }
+ .headerItem a::after {
+	content: attr(data-replace);
+	height: 100%;
+	top: 0;
+	transform-origin: 100% 50%;
+	transform: translate3d(200%, 0, 0);
+	transition: transform .6s cubic-bezier(0.76, 0, 0.24, 1);
+	color: #323232;
+ }
+ 
+ .headerItem a:hover::before {
+	transform-origin: 0% 50%;
+	transform: scaleX(1);
+ }
+ .headerItem a:hover::after {
+	transform: translate3d(0, 0, 0);
+ }
+ 
+ .headerItem a span {
+	display: inline-block;
+	transition: transform .6s cubic-bezier(0.76, 0, 0.24, 1);
+ }
+ 
+ .headerItem a:hover span {
+	transform: translate3d(-200%, 0, 0);
+ }
+ 
+ 
+ .headerItem a {
+	text-decoration: none;
+	vertical-align: top;
+	color: var(--bw-black, #323232);
+ }
+
+.favorite {
+	position: relative;
+}
+.favoriteNumber {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	color:black;
+	border-radius: 50%;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.account {
+	position: relative;
+}
+
+.accountStatus {
+   position: absolute;
+	right: 2px;
+	bottom: 3px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.faild {
+	background: rgb(255, 0, 0);
+}
+.success {
+	background: rgb(14, 158, 14);
+}
+
+.account {
+	@media (max-width: 768px){
+		display: none;
+	}
+}
+.favorite {
+	@media (max-width: 768px){
+		display: none;
+	}
+}
+.price {
+	@media (max-width: 768px){
+		display: none;
+	}
+}
+.burger {
+	display: none;
+	@media (max-width: 768px){
+		display: block;
+	}
+}
